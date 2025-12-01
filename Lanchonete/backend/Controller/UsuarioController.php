@@ -9,23 +9,19 @@ class UsuarioController{
         $this->usuarioModel = new UsuarioModel($pdo);
     }
 
-     public function listar(){
-        $usuarios = $this->usuarioModel->buscarTodos();
-       include_once "C:/Turma1/xampp/htdocs/lanchonete/Lanchonete/backend/DB/database.php";
-       return;
+    public function listar(){
+        return $this->usuarioModel->buscarTodos();
     }
 
-     public function cadastrar($nome, $email, $senha, $telefone){
+    public function cadastrar($nome, $email, $senha, $telefone){
         return $this->usuarioModel->cadastrar($nome, $email, $senha, $telefone);
     }
 
     public function login($email, $senha){
-        return $this->usuarioModel->Login($email, $senha);
+        return $this->usuarioModel->login($email, $senha);
     }
 
     public function buscarUsuario($id){
-        $usuario = $this->usuarioModel->buscarUsuario($id);
-        return $usuario;
+        return $this->usuarioModel->buscarUsuario($id);
     }
-    
 }
