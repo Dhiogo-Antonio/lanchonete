@@ -15,7 +15,7 @@
         <li><a href="dashboard.php">Dashboard</a></li>
         <li><a href="usuarios.php">Usuários</a></li>
         <li><a href="produtos.php">Produtos</a></li>
-        <li><a href="../logout.php">Sair</a></li>
+        <li><a href="logout.php">Sair</a></li>
     </ul>
 </nav>
 </body>
