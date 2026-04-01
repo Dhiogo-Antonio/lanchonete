@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f6fa;
+    color: #2c3e50;
+}
+
+/* NAVBAR */
+nav {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+/* SEÇÃO */
+.secao-tables {
+    padding: 30px;
+}
+
+/* TÍTULO */
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* BOTÃO CADASTRO */
+.btn-cadastro {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff3c00; /* COR DO SEU SITE */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.btn-cadastro:hover {
+    background: #cc3000; /* versão mais escura */
+}
+
+/* ÁREA VAZIA */
+.area-vazia {
+    text-align: center;
+    padding: 40px;
+}
+
+.mensagem-vazia {
+    color: #777;
+    font-size: 16px;
+}
+
+/* TABELA */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* CABEÇALHO */
+.tabela thead {
+    background: #ff3c00; /* COR DO SITE */
+    color: #fff;
+}
+
+.tabela th {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* CORPO */
+.tabela td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* LINHAS */
+.linha:hover {
+    background: rgba(0,0,0,0.03);
+}
+
+/* AÇÕES */
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+/* BOTÕES */
+.btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+
+/* EDITAR */
+.btn-editar {
+    background: #3498db;
+}
+
+.btn-editar:hover {
+    background: #2980b9;
+}
+
+/* DELETAR */
+.btn-deletar {
+    background: #ff3c00; /* COR DO SITE */
+}
+
+.btn-deletar:hover {
+    background: #cc3000;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    background: #3498db; /* mesma cor do site */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    background: #2980b9;
+}

@@ -1,0 +1,101 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f6fa;
+    color: #2c3e50;
+}
+
+/* NAVBAR */
+nav {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* TÍTULO */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #c0392b;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS DE MÉTRICAS */
+.metric {
+    text-align: center;
+}
+
+.metric h3 {
+    font-size: 28px;
+    color: #e74c3c;
+}
+
+.metric p {
+    font-size: 14px;
+    color: #777;
+}
