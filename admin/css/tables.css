@@ -10,7 +10,7 @@ body {
     color: #2c3e50;
 }
 
-/* NAVBAR */
+
 nav {
     background: #ffffff;
     padding: 15px 30px;
@@ -36,23 +36,23 @@ nav ul li a {
 nav ul li a:hover {
     color: #e74c3c;
 }
-/* SEÇÃO */
+
 .secao-tables {
     padding: 30px;
 }
 
-/* TÍTULO */
+
 .titulo {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* BOTÃO CADASTRO */
+
 .btn-cadastro {
     display: inline-block;
     padding: 10px 15px;
-    background: #ff3c00; /* COR DO SEU SITE */
+    background: #ff3c00;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -61,10 +61,10 @@ nav ul li a:hover {
 }
 
 .btn-cadastro:hover {
-    background: #cc3000; /* versão mais escura */
+    background: #cc3000;
 }
 
-/* ÁREA VAZIA */
+
 .area-vazia {
     text-align: center;
     padding: 40px;
@@ -75,7 +75,7 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-/* TABELA */
+
 .tabela {
     width: 100%;
     border-collapse: collapse;
@@ -85,9 +85,9 @@ nav ul li a:hover {
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* CABEÇALHO */
+
 .tabela thead {
-    background: #ff3c00; /* COR DO SITE */
+    background: #ff3c00;
     color: #fff;
 }
 
@@ -97,25 +97,25 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-/* CORPO */
+
 .tabela td {
     padding: 12px 15px;
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
 
-/* LINHAS */
+
 .linha:hover {
     background: rgba(0,0,0,0.03);
 }
 
-/* AÇÕES */
+
 .acoes {
     display: flex;
     gap: 10px;
 }
 
-/* BOTÕES */
+
 .btn {
     padding: 6px 10px;
     border-radius: 6px;
@@ -124,7 +124,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* EDITAR */
+
 .btn-editar {
     background: #3498db;
 }
@@ -133,9 +133,9 @@ nav ul li a:hover {
     background: #2980b9;
 }
 
-/* DELETAR */
+
 .btn-deletar {
-    background: #ff3c00; /* COR DO SITE */
+    background: #ff3c00;
 }
 
 .btn-deletar:hover {
@@ -147,7 +147,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
     margin-right: 10px;
     padding: 10px;
-    background: #3498db; /* mesma cor do site */
+    background: #3498db;
     color: white;
     text-decoration: none;
     border-radius: 6px;
