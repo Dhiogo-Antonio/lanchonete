@@ -14,7 +14,7 @@ function fecharModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
-// fechar clicando fora do modal
+
 window.onclick = function(event) {
     const modal = document.getElementById('modal');
     if (event.target === modal) {
