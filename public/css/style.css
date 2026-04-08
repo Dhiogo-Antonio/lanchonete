@@ -156,10 +156,9 @@ nav img {
     filter: invert(1);
 }
 
-/* modal */
 
 
-/* Overlay escuro */
+
 .modal {
     display: none;
     position: fixed;
@@ -169,7 +168,7 @@ nav img {
     backdrop-filter: blur(4px);
 }
 
-/* Card central */
+
 .modal-content {
     position: relative;
     background: #fff;
@@ -185,7 +184,7 @@ nav img {
     animation: aparecer 0.25s ease;
 }
 
-/* Animação */
+
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -197,14 +196,14 @@ nav img {
     }
 }
 
-/* Imagem */
+
 .modal-content img {
     width: 280px;
     border-radius: 12px;
     object-fit: cover;
 }
 
-/* Área de informações */
+
 .modal-info {
     display: inline-block;
     justify-content: center;
@@ -214,19 +213,18 @@ nav img {
     font-size: 18px;
 }
 
-/* Título */
+
 .modal-info h2 {
     margin-bottom: 10px;
     color: black;
 }
 
-/* Descrição */
 .modal-info p {
     margin-bottom: 10px;
     color: #555;
 }
 
-/* Preço */
+
 .modal-preco {
     font-size: 22px;
     font-weight: bold;
@@ -234,7 +232,7 @@ nav img {
     margin: 10px 0;
 }
 
-/* Botões */
+
 .modal-actions {
     display: flex;
     justify-content: center;
@@ -243,7 +241,7 @@ nav img {
     gap: 10px;
 }
 
-/* Botão adicionar */
+
 .btn-add {
     background: #2ecc71;
     color: white;
@@ -257,7 +255,7 @@ nav img {
     background: #27ae60;
 }
 
-/* Botão voltar */
+
 .btn-voltar {
     background: #ccc;
     border: none;
@@ -270,7 +268,7 @@ nav img {
     background: #aaa;
 }
 
-/* Botão fechar (X) */
+
 .fechar {
     position: absolute;
     top: 10px;
