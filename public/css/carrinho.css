@@ -1,79 +1,131 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 20px;
+}
 
+/* TÍTULO */
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #ffd700;
 }
 
-
+/* ITEM DO CARRINHO */
 .item-carrinho {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #1a1a1a;
     padding: 15px;
-    margin: 15px auto;
-    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: 0.2s;
+}
+
+.item-carrinho:hover {
+    border-color: #ff3c3c;
+    transform: scale(1.01);
+}
+
+/* IMAGEM */
+.item-carrinho img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-
-.item-carrinho img {
-    width: 100px;
-    border-radius: 8px;
-}
-
-
+/* INFO */
 .info {
     flex: 1;
 }
 
-
 .info h3 {
-    margin: 0;
+    margin-bottom: 5px;
+    color: #fff;
 }
-
 
 .info p {
-    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
 }
 
-
+/* BOTÃO REMOVER */
 .remover {
-    color: white;
-    background: red;
-    padding: 5px 10px;
+    background: #ff3c3c;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.2s;
 }
 
+.remover:hover {
+    background: #ffd700;
+    color: #000;
+}
 
+/* TOTAL */
 .total {
-    text-align: center;
+    text-align: right;
     font-size: 22px;
-    margin: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffd700;
 }
 
+.botoes{
+    margin-left: 45%;
+}
 
+/* ÁREA FINAL */
+form {
+    margin-top: 20px;
+}
+
+/* BOTÃO FINALIZAR */
 .finalizar {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background: green;
-    color: white;
+    width: 15%;
+    padding: 14px;
+    background: #ff3c3c;
+    color: #fff;
     border: none;
     border-radius: 8px;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .finalizar:hover {
-    background: darkgreen;
+    background: #ffd700;
+    color: #000;
+}
+
+/* LINK VOLTAR */
+a {
+    width: 15%;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff3c3c;
 }

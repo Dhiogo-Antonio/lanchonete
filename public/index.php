@@ -32,10 +32,13 @@ $totalCarrinho = $carrinhoController->contarItens($usuario['id']);
 <body>
     <header>
         <nav>
+            <div class="logo">
+    <h1>Brutal <span>Lanches</span></h1>
+</div>
             <ul>
-                <li><a href="index.php">Início</a></li>
-                <li><a href="produtos.php">Cardápio</a></li>
-                <li><a href="contato.php">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
 
@@ -64,7 +67,19 @@ $totalCarrinho = $carrinhoController->contarItens($usuario['id']);
         </nav>
     </header>
 
-    <section>
+   <section class="main" id="inicio">
+    <div class="main-content">
+        <h1>Bem-vindo à Brutal Lanches!</h1>
+        <p>Os melhores lanches da cidade, feitos na hora</p>
+        <a href="#cardapio" class="btn-main">Ver Cardápio</a>
+    </div>
+</section>
+
+
+
+
+
+    <section class="cardapio" id="cardapio">
         <h2>Cardápio</h2>
 
         <div class="produtos">

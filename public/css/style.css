@@ -26,7 +26,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
@@ -40,6 +40,29 @@ nav a:hover {
     color: #ffd700;
 }
 
+
+.logo h1 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.logo h1 span {
+    color: #ffd700;
+}
+
+
+.logo h1:hover {
+    color: #ff3c3c;
+}
+
+.logo h1:hover span {
+    color: #fff;
+}
 
 .actions {
     display: flex;
@@ -78,6 +101,105 @@ nav a:hover {
     font-size: 12px;
 }
 
+
+.main {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 2px solid #ff3c3c;
+}
+
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../img/banner.png') center/cover no-repeat;
+    filter: brightness(0.4);
+    z-index: 1;
+}
+
+
+.main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(15,15,15,0.9),
+        rgba(15,15,15,0.6),
+        rgba(255,60,60,0.2)
+    );
+    z-index: 2;
+}
+
+
+.main h1,
+.main p {
+    position: relative;
+    z-index: 3;
+}
+
+
+.main h1 {
+    font-size: 42px;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+
+.main p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+
+.main h1 {
+    animation: subir 0.6s ease;
+}
+
+.main p {
+    animation: subir 0.8s ease;
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-content {
+    top: 45%;
+    left: 10%;
+    position: relative;
+    z-index: 3;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #ff3c3c;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-main:hover {
+    background: #ffd700;
+    color: #000;
+    transform: scale(1.05);
+}
+
 h2 {
     text-align: center;
     margin: 30px 0;
@@ -93,6 +215,7 @@ h2 {
 }
 
 .produto {
+    max-width: 1300;
     background: #1a1a1a;
     border-radius: 10px;
     padding: 15px;

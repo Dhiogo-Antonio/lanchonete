@@ -39,7 +39,7 @@ $total = 0;
     Total: R$ <?= number_format($total, 2, ',', '.') ?>
 </div>
 
-<div>
+<div class="botoes">
 <form method="POST" action="finalizar_pedido.php">
     <button class="finalizar" type="submit">Fazer Pedido</button>
 </form>
