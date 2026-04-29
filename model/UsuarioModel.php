@@ -28,12 +28,13 @@ class UsuarioModel {
         return $stmt->execute([$nome, $email, $telefone, $senha]);
     }
 
-    public function login($email, $senha){
-        $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
-        $stmt->execute([$email, $senha]);
-        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+   public function login($email, $senha){
 
-    if ($usuario['email'] && $usuario['senha']) {
+    $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
+    $stmt->execute([$email]);
+    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($usuario && $senha === $usuario['senha']) {
 
         $_SESSION['usuario'] = [
             'id' => $usuario['id'],
@@ -42,20 +43,17 @@ class UsuarioModel {
             'tipo' => $usuario['tipo']
         ];
 
-     if ($usuario['tipo'] == 'admin') {
-
+        if ($usuario['tipo'] == 'admin') {
             header("Location: ../admin/dashboard.php");
-
         } else {
-
             header("Location: ../public/index.php");
         }
         exit;
 
-    } else {
-        echo "Email ou senha inválidos!";
     }
-   }
+
+    echo "<div class='alert-erro'>Email ou senha inválidos!</div>";
+}
 
       public function editar($nome, $email, $telefone, $senha, $id){
         $sql = "UPDATE usuarios SET nome=?, email=?, telefone=?, senha=? WHERE id=?";

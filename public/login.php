@@ -27,6 +27,7 @@ require_once "C:/Turma2/xampp/htdocs/lanchonete/db/database.php";
             <input class="input" type="password" name="senha" placeholder="Senha" required><br><br>
 
             <button class="btn btn-primary" type="submit">Entrar</button>
+            
 
         </form>
 
@@ -45,6 +46,7 @@ require_once "C:/Turma2/xampp/htdocs/lanchonete/db/database.php";
 require_once "C:/Turma2/xampp/htdocs/lanchonete/controller/UsuarioController.php";
 
 $usuarioController = new UsuarioController($pdo);
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
