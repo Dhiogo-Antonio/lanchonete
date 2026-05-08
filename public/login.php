@@ -54,5 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = $_POST['senha'];
 
     $usuarioController->login($email, $senha);
+
+    
 }
 ?>

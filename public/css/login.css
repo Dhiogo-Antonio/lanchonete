@@ -24,7 +24,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     border: 1px solid #222;
     text-align: center;
-    margin-top: 16rem;
+    margin-top: 1rem;
 }
 
 
@@ -100,7 +100,7 @@ button:hover {
 }
 
 .alert-erro {
-  margin-bottom: 18rem;
+  
   margin-left: 5rem;
 }
 
