@@ -4,6 +4,19 @@ session_start();
 require_once "C:/Turma2/xampp/htdocs/lanchonete/db/database.php";
 require_once "C:/Turma2/xampp/htdocs/lanchonete/controller/CarrinhoController.php";
 
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../login.php");
+    exit;
+}
+
+$usuario = $_SESSION['usuario'];
+
+if (!isset($usuario['id'], $usuario['tipo'])) {
+    session_destroy();
+    header("Location: ../login.php");
+    exit;
+}
+
 $usuario_id = $_SESSION['usuario']['id'];
 
 $carrinhoController = new CarrinhoController($pdo);
